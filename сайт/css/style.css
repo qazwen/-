@@ -488,4 +488,80 @@ footer {
     .hero p {
         font-size: 0.9rem;
     }
+
 }
+
+        .history-section {
+            margin: 40px 0;
+        }
+        
+        .history-block {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+            align-items: center;
+        }
+        
+        .history-block.reverse {
+            direction: rtl;
+        }
+        
+        .history-block.reverse .history-text {
+            direction: ltr;
+        }
+        
+        .history-image {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        
+        .fact-card {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .fact-card h3 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .timeline-mini {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        .timeline-mini-item {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .timeline-mini-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .timeline-year {
+            min-width: 100px;
+            font-weight: bold;
+            color: #c42e2e;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .history-block {
+                grid-template-columns: 1fr;
+            }
+            
+            .history-block.reverse {
+                direction: ltr;
+            }
+        }
